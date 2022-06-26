@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* @charset "utf-8"; */
+* { margin:0; padding:0;}
+ul,ol,li { list-style:none;}
+a { text-decoration:none;}
+h1,h2,h3,h4,h5,h6 { font-size:100%;}
+body { font-size:13px; line-height:1;font-family: 'IBMPlexSansKR-Regular';}
+table { border-collapse: collapse;}
+img { vertical-align:top;}
+.clear:after { content:""; display:block; clear:both;}
+
+.center{width: 1230px; margin:0 auto;}
+
+.register{font-size: 15px; font-weight: bold;color:#353535;}
+input{border-radius:0; border:1px solid #919191;}
+.register h1{font-size: 35px ; color:#353535; text-align: center; margin-top: 100px;margin-bottom: 30px;}
+form{width: 650px; margin:0 auto; border:1px solid #e2e2e2;padding:30px}
+label{width: 100px; display: inline-block;}
+/* margin */
+.margin{margin-bottom: 20px;}
+.margin input{height: 25px;}
+/* check1 */
+.check1 {margin-bottom: 20px;}
+.check1 p:nth-child(1){text-align: center;}
+.check1 .agree{width:650px; margin: 10px auto 0; display: block;height: 300px;border:1px solid #919191;overflow: scroll;line-height: 30px;font-weight: normal;}
+.checkboxall{text-align: right ; margin-top: 10px;}
+.check1 input{margin:0 10px;}
+/* email  */
+.addressbox  label{width: 96px;}
+.email select {height: 28px;}
+/* address */
+
+.addressbox .address-btn{display: inline-block;width: 100px; height: 28px; line-height:  28px; background-color: #aba000;
+            color:#e2e2e2; text-align: center; font-weight: normal;border:none;}
+.addressbox .margin-label{height:30px;}
+
+#address{margin-top:20px; margin-left: 100px;}
+#detailAddress{margin-top:20px; margin-left: 100px;}
+#extraAddress{margin-top:20px; }
+/*  phone*/
+.phone  label{width: 97px;}
+.phone input{width: 100px;}
+.phone a{display: inline-block;width: 100px; height:28px; line-height:  28px; background-color: #aba000;
+         color:#e2e2e2; text-align: center; font-weight: normal;}
+/* letter */
+.letter input{margin-right: 10px ; height: 13px;}
+.letter input:nth-child(3){margin-left: 10px ; height: 13px;}
+.letter .etc{margin-left: 106px; margin-top: 10px;}
+/* btn */
+.btn {width: 204px; margin:0 auto;}
+.btn input{display: inline-block;width: 100px; height: 35px; line-height:  35x; background-color: #aba000;
+            color:#e2e2e2; text-align: center; font-weight: normal;border:none}
+
+
+@media screen and (max-width:1024px) {
+.center{width:83%; }
+
+form{width: 94%; }
+label{width: 100px; display: inline-block;}
+form{padding:3%;}
+/* check1 */
+.check1 .agree{width:100%;}
+
+/* email  */
+.email select {height: 28px;}
+
+}
+
+@media screen and (max-width:725px) {
+    .center{width:90%; }
+/* email */
+.email input:nth-child(5){margin-left: 100px; margin-top: 20px;}
+/* address */
+.addressbox  label{width: 97px;}
+
+#extraAddress{margin-top:20px; margin-left: 100px;display: block; }
+/*  phone*/
+.phone label{width: 95px;}
+.phone input{width: 70px;}
+.phone a{width:100px;display: block; margin-left: 99px; margin-top: 20px;}
+}

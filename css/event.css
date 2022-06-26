@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* @charset "utf-8"; */
+* { margin:0; padding:0;}
+ul,ol,li { list-style:none;}
+a { text-decoration:none;}
+h1,h2,h3,h4,h5,h6 { font-size:100%;}
+body { font-size:13px; line-height:1;font-family: 'IBMPlexSansKR-Regular';}
+table { border-collapse: collapse;}
+img { vertical-align:top;}
+.clear:after { content:""; display:block; clear:both;}
+
+.center{width: 1230px; margin:0 auto;}
+/* eventimg-all */
+.eventimg-all{height: 1400px;}
+/* event */
+.event {margin:60px 0;}
+.event h1{font-size: 35px; color:#303030;text-align: center;}
+.event ul {margin-top:50px;font-size: 0;width: 600px; margin:50px auto 0;}
+.event ul li{display: inline-block;box-sizing: border-box;}
+.event ul li a{display: block; font-size: 16px;color:#a1a1a1; border-top: 1px solid #E2E2E2;
+               border-bottom: 1px solid #E2E2E2;font-weight: bold;text-align: center; line-height: 40px;height: 40px;
+                width: 200px;}
+
+.event ul li.on a{color:#303030; border-bottom: 1px  solid #303030;border-top: 1px solid #303030;}
+/* eventimg */
+.eventimg{margin-top: 30px;}
+
+.eventimg .left{float:left;width: 50%;}
+.eventimg .left img{width: 100%;}
+
+.eventimg .right{float:left;width: 50%;font-size: 0;}
+.eventimg .right img{width: 50%;}
+/* eventimgbox */
+.eventimgbox{position: absolute;}
+
+
+@media screen and (max-width:1024px) {
+.center{width: 83%; }
+/* eventimg-all */
+.eventimg-all{height: 800px;position: relative;}
+/* eventimgbox */
+.eventimgbox{left:0;}
+/* event */
+
+.event ul {width: 100%; }
+.event ul li { width: 33.333333%;}
+.event ul li a{ display: block;width: 100%;}
+
+}
+
+
+
+@media screen and (max-width:640px) {
+/* eventimg */
+.center{width: 90%; }
+
+.eventimg-all{height: 2000px;}
+
+.eventimg .left{float:none;width: 100%;}
+
+.eventimg .right{float:none;width: 100%;}
+.eventimg .right img{width: 50%;}
+
+}

@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* @charset "utf-8"; */
+* { margin:0; padding:0;}
+ul,ol,li { list-style:none;}
+a { text-decoration:none;}
+h1,h2,h3,h4,h5,h6 { font-size:100%;}
+body { font-size:13px; line-height:1;font-family: 'IBMPlexSansKR-Regular';}
+table { border-collapse: collapse;}
+img { vertical-align:top;}
+.clear:after { content:""; display:block; clear:both;}
+
+.center{width: 1230px; margin:0 auto;}
+
+
+/* 시작 */
+.board-write-view-title{font-size: 35px; color:#353535;text-align: center; margin-top: 100px; margin-bottom: 100px;}
+
+.write-view {font-size: 17px; font-weight: bold;}
+
+.title{margin-bottom:20px;border-bottom: 1px solid #e2e2e2;padding-bottom: 20px;}
+.title p{margin-top: 20px;}
+
+.author{padding-bottom: 20px;border-bottom: 1px solid #e2e2e2;}
+
+.context{margin-top:20px; padding-bottom: 20px;}
+.context p{margin-top: 20px;}
+
+.imgbox{width: 1000px;}
+.imgbox img{width: 100%;}
+
+.go-back {width: 100px; height: 50px; border-radius: 0;border:none;margin-top:20px;
+          background-color: #aba000;font-size: 15px; color:#e2e2e2; text-align: center;
+          line-height: 50px;float: left; margin-right: 4px;}
+.go-back a{ display: block; color:#e2e2e2;}
+
+/* 수정삭제버튼 */
+.modify-btn{display: inline-block; margin-top: 20px;}
+.modify-btn a{display:block;  width: 100px; height: 50px; line-height:  50px; background-color: #aba000;
+              color:#e2e2e2; text-align: center; font-weight:bold;border:none;font-size: 15px;}
+.delete-btn{display: inline-block;margin-top: 20px;}
+.delete-btn a{display:block; width: 100px; height: 50px; line-height:  50px; background-color: #aba000;
+             color:#e2e2e2; text-align: center; font-weight:bold;border:none;font-size: 15px;}
+
+
+@media screen and (max-width:1024px) {
+
+
+.center{width: 83%; }
+
+.title input{width:100%;}
+
+.context textarea{width: 100%;}
+
+
+
+
+/* 시작 */
+
+.imgbox{width: 90%;}
+.imgbox img{width: 100%;}
+
+
+}

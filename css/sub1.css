@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* @charset "utf-8"; */
+* { margin:0; padding:0;}
+ul,ol,li { list-style:none;}
+a { text-decoration:none;}
+h1,h2,h3,h4,h5,h6 { font-size:100%;}
+body { font-size:13px; line-height:1;font-family: 'IBMPlexSansKR-Regular';}
+table { border-collapse: collapse;}
+img { vertical-align:top;}
+.clear:after { content:""; display:block; clear:both;}
+
+.center{width: 1230px; margin:0 auto;}
+
+/* subcont1 */
+.subcont1{margin-top: 100px;}
+/* cont1 */
+.top-banner{background-image: url(../img/sub1/banner.jpg); height:400px;background-size: cover;
+            background-position:center center;}
+/* 텍스트 */
+.top-text{text-align: center; margin-top: 70px;border-bottom:1px solid #e2e2e2; padding-bottom: 60px;}
+
+.top-text span{color:#aba000;}
+.top-text h1{font-size: 60px; }
+.top-text h2{font-size: 20px; margin:30px 0;}
+.top-text p{line-height: 25px; font-size: 15px;}
+
+.bot-text {background-image: url(../img/sub1/back.jpg); height:2000px; background-repeat: no-repeat; background-size: cover;}
+/* 질문 */
+.qu{text-align: center;margin-top: 100px;}
+.qu h1{font-size: 60px;font-weight: normal;margin-bottom: 20px;}
+.qu p{font-size: 45px;}
+/* 앤서 */
+.an{width: 1000px; margin:100px auto 0;}
+/* 빨강말풍선 */
+.an-man{float: left;margin-top: 100px;margin-right: 30px;}
+.an-man .man-img{width: 60px; height: 60px; background-image: url(../img/sub1/man1.png);display: block;
+                 background-size: cover;}
+
+.an-talk{float:left;}
+.an-talk h1{font-size: 30px; margin-left:36px;margin-top: 10px;}
+.an-talk .talk {background-image: url(../img/sub1/talk.png); width: 693px; height: 262px;
+                background-repeat: no-repeat;box-sizing: border-box; padding:100px; color:#303030;
+                font-size: 16px; line-height: 30px; font-weight: bold;}
+/* 파랑말풍선 */
+.an:nth-child(2){margin-left: 350px;}
+.an:nth-child(2) .an-man{margin-top: 180px;}
+.an:nth-child(2) .man-img{background-image: url(../img/sub1/man2.png);}
+.an:nth-child(2) .talk{background-image: url(../img/sub1/talk2.png);padding:70px;}
+/* 초록말풍선 */
+.an:nth-child(3) .man-img{background-image: url(../img/sub1/man3.png);}
+.an:nth-child(3) .talk{background-image: url(../img/sub1/talk3.png);}
+/* subcont2 */
+.coubont2img{width:100%}
+.subcont2 p {font-size: 16px; line-height: 30px;text-align: center; font-weight: bold; margin-top: 40px; color:#303030;}
+/* subcont3 */
+.subcont3{margin-top: 200px; color:#303030;font-size: 0;}
+.subcont3 ul{text-align: center;}
+.subcont3 ul li {display: inline-block;width: 380px; margin: 0 15px;}
+.subcont3 ul li img{width:200px;}
+.subcont3 ul li h4{font-size: 25px;margin-top: 20px;}
+.subcont3 ul li h3{font-size: 17px;margin:10px 0;}
+.subcont3 ul li p{font-size: 13px;line-height: 20px;}
+/* subcont4 */
+.subcont4{margin-top: 200px;text-align: center; }
+.subcont4 h2{margin-bottom: 40px; font-size:30px ; }
+.subcont4 iframe{margin: 0 10px;}
+
+@media screen and (max-width:1024px) {
+
+
+.center{width: 83%; margin:0 auto;}
+
+/* subcont1 */
+
+/* cont1 */
+
+/* 앤서 */
+.an{width: 100%;}
+/* 빨강말풍선 */
+.an-man {display: none;}
+.an-talk .talk { width: 100%;background-size: 100%;height: 300px;}
+/* 파랑말풍선 */
+.an:nth-child(2){margin-left: 0px;}
+.an:nth-child(2) .talk{padding:85px;}
+/* subcont3 */
+.subcont3 ul li {width: 75%; margin: 60px 15px 0 15px;}
+/* subcont4 */
+.subcont4 iframe{margin: 50px 10px 0 10px; width: 100%;}
+    
+}
+
+@media screen and (max-width:800px) 
+{.an-talk .talk{padding:60px;}
+.an:nth-child(2) .talk{padding:69px;}
+
+}
+
+@media screen and (max-width:670px) 
+{
+    
+    .an-talk .talk {font-size: 15px;}
+    .an-talk .talk {padding:44px;}
+    .an:nth-child(2) .talk{padding:44px;}
+
+
+}
+@media screen and (max-width:570px) 
+{
+    
+    .an-talk .talk {font-size: 12px;line-height: 24px;}
+    .an-talk .talk {padding:38px;}
+    .an:nth-child(2) .talk{padding:30px;}
+
+
+}

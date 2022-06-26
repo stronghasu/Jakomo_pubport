@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* @charset "utf-8"; */
+* { margin:0; padding:0;}
+ul,ol,li { list-style:none;}
+a { text-decoration:none;}
+h1,h2,h3,h4,h5,h6 { font-size:100%;}
+body { font-size:13px; line-height:1;font-family: 'IBMPlexSansKR-Regular';}
+table { border-collapse: collapse;}
+img { vertical-align:top;}
+.clear:after { content:""; display:block; clear:both;}
+
+.center{width: 1230px; margin:0 auto;}
+/* login */
+.sub-login{margin-top: 100px;}
+.sub-login h1{text-align: center; color:#353535; font-size: 35px;}
+
+form{width: 400px; margin:50px auto 0;}
+form span{display: inline-block; width: 70px; font-size: 16px; color:#353535; font-weight: bold;}
+
+.id{margin-bottom:20px;}
+.id input{border:none; border-bottom: 1px solid #919191;width: 320px;height:30px;}
+.pass input{border:none; border-bottom: 1px solid #919191;;width: 320px;height:30px;}
+
+.submit{width: 400px; border:none; background-color: #aba000;color:#e2e2e2; height: 40px; 
+        font-size: 16px; margin-top: 30px;}
+/* login-menu */
+.sub-login-menu{width: 400px; margin:20px auto 0;}
+.sub-login-menu .find{float:left;}
+.sub-login-menu .find a{font-size: 14px; color:#353535; margin-right: 10px; }
+
+.sub-login-menu .register{float:right;}
+.sub-login-menu .register a{font-size: 14px; color:#353535;}
+/* other-login */
+.other-login{width: 400px; margin:20px auto 0; font-size: 15px;}
+.other-login h5{text-align: center;margin-bottom: 20px; }
+
+.other-login a{width: 400px;border:1px solid #e2e2e2; padding:5px; box-sizing: border-box; display: block;
+                margin: 5px 0;}
+
+.other-login .login-logo{width: 35px; height: 35px; background-image: url(../img/login/google.png);
+                             background-size: cover;float:left; }
+.other-login p{color:#353535; font-weight: bold;text-align: right; float:right;margin-top: 10px;}
+.other-login p span{color:rgb(64, 101, 180);}
+
+.other-login a:nth-child(2) .login-logo{background-image: url(../img/login/naver.png);} 
+.other-login a:nth-child(2) p span{color:green;} 
+
+.other-login a:nth-child(3) .login-logo{background-image: url(../img/login/kakao.png);width: 40px;} 
+.other-login a:nth-child(3) p span{color:rgb(245, 201, 59);} 
+
+
+@media screen and (max-width:1024px) {
+
+
+.center{width: 83%; }
+
+}
+
+
+@media screen and (max-width:640px) {
+
+
+    .center{width: 90%; }
+
+form{width: 100%;}
+
+.id input{width:83%;}
+.pass input{width:83%;}
+
+.submit{width: 100%;}
+/* login-menu */
+.sub-login-menu{width: 100%;}
+/* other-login */
+.other-login{width:100%;}
+
+.other-login a{width:100%;}
+    }

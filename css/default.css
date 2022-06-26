@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* @charset "utf-8"; */
+* { margin:0; padding:0;}
+ul,ol,li { list-style:none;}
+a { text-decoration:none;}
+h1,h2,h3,h4,h5,h6 { font-size:100%;}
+body { font-size:13px; line-height:1;font-family: 'IBMPlexSansKR-Regular';}
+table { border-collapse: collapse;}
+img { vertical-align:top;}
+.clear:after { content:""; display:block; clear:both;}
+
+.center{width: 1230px; margin:0 auto;}
+
+
+/* header */
+.m-header-btn{display: none;}
+
+#header{box-shadow: 1px 1px 10px rgb(201, 194, 186); z-index: 10; position: relative;}
+
+.logo{width: 180px; float: left; margin:15px 0;}
+.logo img{width: 100%;}
+/* 메인메뉴 */
+.h-menu{float: left; text-align: center; margin-left: 50px;}
+.h-menu >li{float:left;width:100px; padding:51px 10px; position: relative;}
+
+.h-menu >li:after { background-color: #aba000; width: 0px ;height: 0px;border-radius: 50%;
+                     position: absolute; content: ""; display: block; top:40px; transition: all 0.3s;}
+.h-menu >li:nth-child(1):after { left:-6px;}
+.h-menu >li:hover:after { width: 10px ; height: 10px;}
+.h-menu >li a{font-size: 17px; color:rgb(92, 92, 92); font-weight: bold;}
+
+.h-menu-right {background-color: #aba000;float: left; height: 119px; width: 280px;}
+/* 로그인/회원가입/장바구니 */
+.login{float: left; margin-top: 36px; margin-left: 37px;}
+.login li{float: left; padding:0 13px; box-sizing: border-box;}
+.login li a{ text-align: center; color:#E2E2E2;transition: all 0.5s;}
+.login li:hover a{color:#535353;}
+.login li a img{ width: 20px; display: block; margin:0 auto 5px;}
+.login .userid{padding-top: 17px;color:#E2E2E2;}
+.login .logout{padding-top: 17px;}
+/* sns부분 */
+.h-sns{float: left;}
+.h-sns li{float:left; margin:8px; margin-top: 45px;}
+.h-sns li i {color:#E2E2E2; font-size: 23px; transition: all 0.5s;} 
+.h-sns li:hover i {color:#3d3d3d; } 
+/* 투뎁스 */
+.depth2 {position: absolute; top:120px; background-color: rgb(255, 255, 255) ;text-align: center; width: 100%;left:0;
+         box-shadow: 1px 1px 10px rgb(201, 194, 186); display: none;}
+.depth2  li{ transition: all 0.5s;border-bottom:1px solid #ffffff;}
+.depth2  li:hover{border-bottom: 1px solid #c2c2c2;}
+.depth2  li a{display: block; margin: 10px 0px; font-size: 15px;}
+
+
+/* footer */
+#footer{background-color: #aba000; margin-top: 100px; padding:30px 0;}
+
+.footer-top {border-bottom: 1px solid #6d66003f;margin-bottom:20px;}
+.footer-top ul{float:left;}
+
+.footer-top ul li{display: inline-block;}
+.footer-top ul li:before{content: ""; display: inline-block; width: 1px; height: 10px;
+                          background-color: #6d6600;margin:0 3px;position: relative;
+                          top:1px;}
+.footer-top ul li:nth-child(1)::before{display: none;}
+.footer-top ul li a{color:#E2E2E2;margin:0 5px;}
+
+.footer-top .talk-btn{display: block;width: 40px; height:40px; background-image: url(../img/main/f-chat.jpg);
+                      background-size: cover;float:left;background-color: #fff; border-radius: 50%;
+                      position: relative; top:-12px; left:170px;}
+/* footer-bot */
+
+.footer-left {float:left; width: 50%;}
+
+.footer-right {float:left;width: 50%; margin-top: 15px;}
+
+.footer-bot .footer-logo img{width: 100px;margin-bottom:10px;}
+.footer-bot h5{font-size: 20px;color:#6d6600;margin-bottom:10px;}
+.footer-bot h4{color:#6d6600;}
+.footer-bot p{margin-bottom:10px; color:#E2E2E2;}
+.footer-bot span::before{content: ""; display: inline-block; width: 1px; height: 10px;
+                         background-color: #6d6600;margin:0 10px;position: relative;
+                         top:1px;}
+.footer-phone {font-size: 20px; font-weight: bold;}
+
+.footer-sns li{display: inline-block;margin:0 5px;}
+.footer-sns li a{font-size: 25px; color:#E2E2E2;transition: all 0.5s; }
+.footer-sns li a:hover{color:#3d3d3d;}
+
+@media screen and (max-width:1024px){
+.center{width: 83%;}
+
+
+/* header */
+
+.logo{width: 24%;}
+
+/* 모바일메뉴 */
+.h-menu{display: none;}
+
+.m-header-btn{display: block;float: right;margin-top: 30px;}
+.m-header-btn span{display: block; width: 35px; height: 6px; background-color: #aba000;
+                    margin:5px 0;}
+/* 메뉴들 */
+.h-menu-right{ display: none;}
+
+.m-h-menu-all{background-color: #aba000;position: fixed;top:0;right:-100%;width:50%;box-shadow: 1px 1px 10px #535353;transition: all 0.5s;}
+/* 포지션 픽스드 줘야함 모바일메뉴 나오는거 */
+
+.m-header-closebtn{font-size: 40px; color:#E2E2E2;display: block; padding:10px;
+                   font-weight: bold;transition: all 0.5s;width: 40px; text-align: center;}
+                   .m-header-closebtn:hover{transform: rotate(180deg);}
+
+.m-h-menu > li{background-color:#aba000;transition: all 0.5s;}
+.m-h-menu > li > a{display:block;line-height: 42px;font-size: 20px;font-weight: bold;
+                    color:#E2E2E2;padding-left: 20px;}
+.m-h-menu > li:hover{background-color:#6d6600;}
+
+.m-depth2 {display: none;}
+.m-depth2 > li{background-color:#fff;transition: all 0.5s;}
+.m-depth2 > li > a{display:block;line-height: 42px;font-size: 20px;font-weight: bold;
+                    color:#aba000;box-sizing: border-box;padding-left: 20px;}
+                    .m-h-menu-login{margin-top: 30px;}
+.m-depth2 > li:hover{background-color: #c2c2c2;}
+
+.m-h-menu-login img{display: none;}
+.m-h-menu-login li a{display: block; width:85%;background-color: #fff;
+                     color:#aba000;font-size: 18px; line-height: 49px; text-align: center;margin:14px auto;
+                    font-weight: bold; border-radius: 5px;transition: all 0.5s;}
+.m-h-menu-login li:hover a{background-color:#c2c2c2 ;}
+
+}
+
+@media screen and (max-width:700px){
+
+    .footer-top .talk-btn{left:10px}
+
+}
+
+@media screen and (max-width:640px){
+    .center{width: 63%;}
+
+    .m-header-btn{margin-top: 15px;}
+
+}
+
+
+@media screen and (max-width:564px){
+    .footer-top ul li{display: block;margin:5px 0;}
+    .footer-top ul li:nth-child(5){margin-bottom: 20px;}
+    .footer-top ul li:before{display: none;}
+    .footer-top .talk-btn{display: none;}
+
+}

@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* @charset "utf-8"; */
+* { margin:0; padding:0;}
+ul,ol,li { list-style:none;}
+a { text-decoration:none;}
+h1,h2,h3,h4,h5,h6 { font-size:100%;}
+body { font-size:13px; line-height:1;font-family: 'IBMPlexSansKR-Regular';}
+table { border-collapse: collapse;}
+img { vertical-align:top;}
+.clear:after { content:""; display:block; clear:both;}
+
+.center{width: 1230px; margin:0 auto;}
+
+/* best-item */
+.best-item{margin-top: 100px;}
+
+.bi-banner{background-image: url(../img/sub2/banner.png);height: 258px;
+            background-size: 100%;text-align: center; font-size: 35px;}
+            .bi-banner h1{padding-top: 30px;}
+           
+.item{float:left;text-align: center; width: 350px; margin:0 30px; position: relative;top:-100px;transition: all 0.5s;}
+.item:nth-child(1){top:-162px}
+.item:nth-child(3){top:-216px}
+
+.item:nth-child(1):hover {top:-190px}
+.item:nth-child(2):hover {top:-130px}
+.item:nth-child(3):hover{top:-236px}
+
+.item img{width:350px}
+.item .kind{color:#aba000;font-size: 15px; margin-top: 10px;font-weight: bold;}
+.item .name{color:#303030;font-size: 20px; margin-top: 10px;}
+.item .price{color:#303030;font-size: 16px; margin:10px 0;}
+.item .review{color:#303030;font-size: 13px;line-height: 20px;}
+.item .id{color:#afafaf;font-size: 12px;margin:10px 0;}
+
+.item ul li{display: inline-block;margin:0 4px;}
+.item ul li a{color:#aba000; font-size: 20px;}
+/* cont2 */
+/* 전체메뉴 */
+.sub2-cont2{text-align: center;}
+.sub2-cont2-title{font-size: 35px;color:#303030;text-align: center; margin-bottom:50px;}
+
+.item-menu li{display: inline-block;margin: 0 5px; }
+.item-menu li a{display: block; width: 105px; height: 30px; box-shadow: 1px 1px 2px #5a5a5a;
+                text-align: center; border-radius: 10px; color:#5a5a5a; font-size: 15px; line-height: 30px;}
+.item-menu li.on a{background-color: #aba000;color:#E2E2E2;}
+
+/* 박스들 */
+.list-box{width: 380px;float: left;margin:80px 15px 0 15px;position: relative;height: 400px;}
+.list-box img {width: 380px;}
+.list-box .item-title{font-size: 20px; color:#303030;margin:10px 0;}
+.list-box .item-price{font-size: 16px; color:#303030;font-weight: bold;}
+.list-box .sale-price{font-size:14px; color:#7c7c7c;margin-top: 10px;text-decoration:line-through;margin:0 10px;}
+.list-box .sale {color: rgb(243, 66, 66);;}
+.list-box ul li{display: inline-block; margin: 10px 3px; font-size: 15px; width: 50px;height: 20px; border:1px solid #303030;
+                line-height: 20px; color:#303030;}
+/* 플러스버튼 */
+.list-box .plus-btn{position: absolute; width: 380px; height:305px;background-color: rgba(0,0,0,0.5);
+                    top:0;height: 304px;left:0; top:0;line-height:305px;color:#e2e2e2;font-size: 40px;transition:  all 0.5s;
+                    opacity: 0;} 
+.list-box .plus-btn i{transition:  all 0.5s;}
+.list-box:hover .plus-btn{opacity: 1;}
+.list-box:hover .plus-btn i{transform: rotate(180deg);}
+
+@media screen and (max-width:1024px) {
+
+
+.center{width: 83%;}
+
+
+/* best-item */
+           
+.item{width:100%; }
+.item:nth-child(1){top:-100px}
+.item:nth-child(2){top:-50px}
+.item:nth-child(3){top:-20px}
+
+.item:nth-child(1):hover {top:-120px}
+.item:nth-child(2):hover {top:-70px}
+.item:nth-child(3):hover{top:-40px}
+
+/* cont2 */
+/* 전체메뉴 */
+.sub2-cont2{margin-top: 100px;}
+
+.item-menu {text-align: center; width: 100%;}
+.item-menu li {width: 29%;text-align: center; margin: 10px 1%;}
+.item-menu li a{width:100%;}
+
+/* 박스들 */
+.list-box{width: 46%;margin:80px 2% 0 2%;position: relative;height: 400px;overflow: hidden;}
+.list-box img {width: 100%;}
+
+/* 플러스버튼 */
+.list-box .plus-btn{ width: 100%;text-align: center;  height: 100%;} 
+}    
+
+@media screen and (max-width:670px) {
+
+
+    .center{width: 90%;}
+    
+    
+    /* best-item */
+               
+    /* cont2 */
+    /* 전체메뉴 */
+    .sub2-cont2{margin-top: 100px;}
+    
+    .item-menu {text-align: center; width: 100%;}
+    .item-menu li {width: 29%;text-align: center; margin: 10px 1%;}
+    .item-menu li a{width:100%;}
+    
+    /* 박스들 */
+    .list-box{width: 100%;margin:40px 0 0 0;height: 600px;}
+    
+    /* 플러스버튼 */
+    .list-box .plus-btn{ width: 100%;text-align: center;  height: 100%;line-height:600px;} 
+    }    
